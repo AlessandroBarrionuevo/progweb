@@ -1,0 +1,10 @@
+<div  *ngIf="(auth.isAuthenticated$ | async) " style="text-align: center;" class="barra">
+    <h5 class="titulo"><a [routerLink]="['/table']">Personajes</a></h5>
+    <h5 class="titulo"><a [routerLink]="['/episode']">Episodios</a></h5>
+    <h5 class="titulo"><a [routerLink]="['/logout']">Logout</a></h5>
+</div>
+
+<div >
+    <router-outlet></router-outlet>
+</div>
+

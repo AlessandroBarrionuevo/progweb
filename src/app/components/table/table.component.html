@@ -1,0 +1,25 @@
+
+<table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Especie</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let datos of personajes"> 
+      <tr>
+       <td>{{datos.id}}</td>
+       <td><a [routerLink]="['/character', datos.id ]" class="linkName">{{datos.name}}</a></td>
+       <td>{{datos.gender}}</td>
+       <td>{{datos.species}}</td>
+      </tr>
+    </tbody>
+    
+  </table>
+
+<div class="containerPaginacion">
+  <button (click)="getNextPage(respuesta.info.prev)" class="btnPaginacion">Prev</button>
+  <button (click)="getPreviousPage(respuesta.info.next)" class="btnPaginacion">Next</button>
+</div>

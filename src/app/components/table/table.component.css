@@ -1,0 +1,9 @@
+.linkName{
+    text-decoration: none;
+    color: #7ffa67;
+}
+
+.linkName:hover{
+    padding: 1rem;
+}
+

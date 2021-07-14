@@ -1,0 +1,11 @@
+.contenedor-card{
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: #7ffa67 solid;
+}
+
+.card-body{
+    background-color: black;
+    color: #02b1c8;
+    border: #7ffa67 solid;
+}

@@ -1,0 +1,20 @@
+{
+    "/server": {
+        "target": "https://rickandmortyapi.com",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/server": ""
+        }
+    },
+    "/auth/*": {
+        "target": "http://localhost:8080/auth",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/auth": ""
+        }
+    }
+}

@@ -1,0 +1,33 @@
+
+/******* Login component ******/
+.contorno-login{
+    margin: 5rem;
+    border: 1px solid ;
+    border-color: #7ffa67;
+}
+
+.contenedor-login{
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tituloLogin{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    color: #02b1c8;
+}
+
+.btnLogin{
+    background-color: black;
+    color: #02b1c8;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+
+/************ Cards ************/

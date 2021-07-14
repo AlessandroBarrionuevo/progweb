@@ -1,0 +1,11 @@
+
+
+.imagenError{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVSHOSGZx2xewSIBNhmbOWqMyP3xMweFZ58xIxhndlkcLTs6Xo0l3c2Yh6RQq1YoqzENg&usqp=CAU);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+

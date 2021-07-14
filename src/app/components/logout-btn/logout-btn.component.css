@@ -1,0 +1,11 @@
+.containerLogout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.tituloLogout{
+    color: #7ffa67;
+    margin-bottom: 3rem;
+}
