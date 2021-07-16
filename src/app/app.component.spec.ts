@@ -1,13 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { AuthModule, AuthService } from '@auth0/auth0-angular';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
+      providers:[AuthService],
+      imports:[  RouterTestingModule, AuthModule.forRoot({
+        domain:"segundoparcialangular.us.auth0.com"
+        ,clientId: "pyNzHuIFNG9FFmIfkM215NJ0lFtUjORr"
+      })],
       declarations: [
         AppComponent
       ],
@@ -20,16 +23,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AlessandroBarrionuevo'`, () => {
+  it(`should have as title 'a'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AlessandroBarrionuevo');
+    expect(app.title).toEqual('a');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('AlessandroBarrionuevo app is running!');
-  });
 });

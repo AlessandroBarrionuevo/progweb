@@ -8,7 +8,10 @@ import { CharacterObj } from '../models/character';
 })
 export class CharactersService {
 
-  constructor(private htppClient: HttpClient) { }
+  datos: any[]
+
+  constructor(private htppClient: HttpClient) {
+  }
 
   getAllCharacters() {
     return this.htppClient.get('https://rickandmortyapi.com/api/character');

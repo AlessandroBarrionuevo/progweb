@@ -13,7 +13,7 @@ describe('TableComponent', () => {
     })
     .compileComponents();
   });
-
+``
   beforeEach(() => {
     fixture = TestBed.createComponent(TableComponent);
     component = fixture.componentInstance;
